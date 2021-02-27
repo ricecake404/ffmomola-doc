@@ -1,0 +1,16 @@
+{
+  "name": "pastry-fish-doc",
+  "version": "1.0.0",
+  "description": "pastry fish document",
+  "main": "index.js",
+  "repository": "https://e.coding.net/ricecake302/pastry-fish/pastry-fish-doc.git",
+  "author": "RiceCake404 <etenaelta@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.26"
+  }
+}
