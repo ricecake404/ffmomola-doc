@@ -8,10 +8,9 @@ export default defineUserConfig<DefaultThemeOptions>({
 
   themeConfig: {
     logo: "https://cdn.jsdelivr.net/gh/ricecake404/images@main/img/pastry-fish.png",
-    repo: "https://ricecake302.coding.net/p/pastry-fish/d/pastry-fish-doc/git",
+    repo: "https://github.com/ricecake404/ffmomola-doc",
     repoLabel: "文档项目",
-    docsRepo:
-      "https://ricecake302.coding.net/p/pastry-fish/d/pastry-fish-doc/git",
+    docsRepo: "https://github.com/ricecake404/ffmomola-doc",
     docsBranch: "master",
     docsDir: "docs",
     editLinkPattern: ":repo/tree/:branch/:path?tab=file",
@@ -19,9 +18,7 @@ export default defineUserConfig<DefaultThemeOptions>({
       "/guide/": [
         {
           text: "指南",
-          children: [
-            "/guide/download.md",
-          ],
+          children: ["/guide/download.md"],
         },
       ],
     },
