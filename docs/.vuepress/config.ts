@@ -5,8 +5,9 @@ export default defineUserConfig<DefaultThemeOptions>({
   lang: "zh-CN",
   title: "鱼糕文档",
   description: "最终幻想FF14鱼糕文档站",
+  head: [["link", { rel: "icon", href: "/images/pastry-fish.webp" }]],
   themeConfig: {
-    logo: "https://static.ffmomola.com/pastry-fish-static-files/img/logo/pastry-fish.webp",
+    logo: "/images/pastry-fish.webp",
     repo: "ricecake404/ffmomola-doc",
     repoLabel: "查看源码",
     docsBranch: "master",
