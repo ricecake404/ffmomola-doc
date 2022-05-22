@@ -20,9 +20,7 @@ export default defineUserConfig<DefaultThemeOptions>({
         {
           text: "指南",
           children: [
-            "/guide/README.md",
-            "/guide/getting-started.md",
-            "/guide/full-guide.md",
+            "/guide/download.md",
           ],
         },
       ],
