@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Deploy
 
 # Controls when the workflow will run
 on:
@@ -46,3 +46,9 @@ jobs:
           local_path: docs/.vuepress/dist
           remote_path: .
           clean: true
+
+      - name: Purge CDN
+        run: |
+          pip install tccli
+          tccli configure set secretId ${{ secrets.TENCENT_CLOUD_SECRET_ID }} secretKey ${{ secrets.TENCENT_CLOUD_SECRET_KEY }}
+          tccli cdn PurgePathCache --cli-unfold-argument --Paths https://doc.ffmomola.com --FlushType flush
