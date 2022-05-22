@@ -48,7 +48,10 @@ jobs:
           clean: true
 
       - name: Purge CDN
+        env:
+          TENCENT_CLOUD_SECRET_ID: ${{ secrets.TENCENT_CLOUD_SECRET_ID }} 
+          TENCENT_CLOUD_SECRET_KEY: ${{ secrets.TENCENT_CLOUD_SECRET_KEY }}
         run: |
           pip install tccli
-          tccli configure set secretId ${{ secrets.TENCENT_CLOUD_SECRET_ID }} secretKey ${{ secrets.TENCENT_CLOUD_SECRET_KEY }}
+          tccli configure set secretId "$TENCENT_CLOUD_SECRET_ID" secretKey "$TENCENT_CLOUD_SECRET_KEY"
           tccli cdn PurgePathCache --cli-unfold-argument --Paths https://doc.ffmomola.com --FlushType flush
