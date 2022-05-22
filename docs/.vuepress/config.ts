@@ -7,18 +7,20 @@ export default defineUserConfig<DefaultThemeOptions>({
   description: "最终幻想FF14鱼糕文档站",
 
   themeConfig: {
-    logo: "https://cdn.jsdelivr.net/gh/ricecake404/images@main/img/pastry-fish.png",
-    repo: "https://github.com/ricecake404/ffmomola-doc",
-    repoLabel: "文档项目",
-    docsRepo: "https://github.com/ricecake404/ffmomola-doc",
+    logo: "https://static.ffmomola.com/pastry-fish-static-files/img/logo/pastry-fish.webp",
+    repo: "ricecake404/ffmomola-doc",
+    repoLabel: "查看源码",
     docsBranch: "master",
     docsDir: "docs",
     editLinkPattern: ":repo/tree/:branch/:path?tab=file",
+    editLinkText: "编辑此页",
+    lastUpdatedText: "上次更新",
+    contributorsText: "编辑",
     sidebar: {
-      "/guide/": [
+      "/pastry-fish/": [
         {
-          text: "指南",
-          children: ["/guide/download.md"],
+          text: "鱼糕",
+          children: ["/pastry-fish/download.md"],
         },
       ],
     },

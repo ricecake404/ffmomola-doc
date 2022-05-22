@@ -1,10 +1,10 @@
 ---
 home: true
 title: Home
-heroImage: https://cdn.jsdelivr.net/gh/ricecake404/images@main/img/pastry-fish.png
+heroImage: https://static.ffmomola.com/pastry-fish-static-files/img/logo/pastry-fish.webp
 actions:
   - text: 鱼糕下载
-    link: /guide/download.html
+    link: /pastry-fish/download.html
     type: primary
   # - text: 光之渔夫手册
   #   link: /guide/full-guide.html
